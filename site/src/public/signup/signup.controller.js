@@ -9,8 +9,9 @@ function SignupController() {
   var reg = this;
   //$ctrl.menuCategories = menuCategories;
 
-  this.submit = function() {
-
+  reg.submit = function() {
+    reg.completed = true;
+    $window.location.href = '/index.html'
   };
 }
 
