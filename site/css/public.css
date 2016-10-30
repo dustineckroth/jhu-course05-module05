@@ -1,9 +1,17 @@
-input {
+input, option, select {
   color: black;
 }
 
 legend {
   color: white;
+}
+
+#regButton {
+  color: black;
+}
+
+#favFoodImg {
+  float: right;
 }
 
 /* HOME PAGE */

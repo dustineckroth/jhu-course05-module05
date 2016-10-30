@@ -1,0 +1,24 @@
+<div class="container" ng-if="!myInfo.userInfo.completed">
+  Not registered yet!
+
+  <br>
+  <br>
+
+  <a ui-sref="public.signup">Sign up now!</a>
+</div>
+
+<div class="container" ng-if="myInfo.userInfo.completed">
+  <h3>My Info</h3>
+
+  First Name: {{ myInfo.userInfo.firstname }} <br/>
+  Last Name: {{ myInfo.userInfo.lastname }} <br/>
+  Email: {{ myInfo.userInfo.email }} <br/>
+  Phone: {{ myInfo.userInfo.phone }} <br/><br/>
+
+  <img id="favFoodImg" src="{{myInfo.userInfo.image}}"></img>
+  
+  <b>Favorite Dish:</b><br>
+  {{ myInfo.userInfo.favorite.short_name }} - {{ myInfo.userInfo.favorite.name }}<br>
+  {{ myInfo.userInfo.favorite.description }}
+
+</div>
